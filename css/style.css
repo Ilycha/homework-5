@@ -125,11 +125,11 @@ header {
   transition-duration: 250ms;
 }
 
-.list .item .linc:hover::after,
+/* .list .item .linc:hover::after,
 .list .item .linc:focus::after {
   opacity: 1;
   transition-duration: 250ms;
-}
+} */
 
 /* -------- */
 
