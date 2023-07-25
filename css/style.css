@@ -18,7 +18,6 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   padding-top: 80px;
-
 }
 p {
   font-weight: 400;
@@ -36,17 +35,14 @@ img {
 header {
   border-bottom: 1px solid #eee;
 
-
   width: 100%;
   background-color: #ffffff;
-  position: relative ;
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
 }
-
-
 
 .section {
   padding-bottom: 94px;
@@ -102,47 +98,47 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  
 }
 
 /* пщзиционирование декора 
     в сыылках шапки */
-.item{
+.item {
   position: relative;
-} 
+}
 
 .item .linc::after {
-  content:'';
+  content: "";
   bottom: 0;
   left: 0;
-background-color: #2196F3;
-width: 100%;
-height: 4px;
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
 
-border-radius: 2px;
-position: absolute;
-opacity: 0;
+  border-radius: 2px;
+  position: absolute;
+  opacity: 0;
+  transition-duration: 250ms;
+}
+
+.list .item .current::after {
+  opacity: 1;
+  transition-duration: 250ms;
 }
 
 .list .item .linc:hover::after,
-.list .item .linc:focus::after{
+.list .item .linc:focus::after {
   opacity: 1;
-}
-
-.list .item .current::after{
-  opacity: 1;
+  transition-duration: 250ms;
 }
 
 /* -------- */
-
-
-
 
 .site-nav .linc:hover,
 .site-nav .linc:focus,
 .contact-list .linc:hover,
 .contact-list .tel:hover {
   color: var(--link-color);
+  transition-duration: 250ms;
 }
 .contact-list .linc:focus,
 .contact-list .tel:focus {
@@ -170,10 +166,8 @@ opacity: 0;
 }
 
 .mine-nav {
-  
   align-items: center;
   display: flex;
-  
 }
 
 .contact-list .linc,
@@ -194,6 +188,7 @@ opacity: 0;
 .item :hover,
 .item :focus {
   fill: #2196f3;
+  transition-duration: 250ms;
 }
 
 /* Альтернатива */
@@ -304,47 +299,41 @@ opacity: 0;
   margin-bottom: 0;
 
   display: flex;
-
 }
 
 .photo-works > li {
   margin-right: 30px;
-position: relative;
+  position: relative;
 }
 .photo-works > li:nth-child(3n) {
   margin-right: 0;
 }
 
+.descriotion-profile {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
 
-.descriotion-profile{
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 
-  background-color:rgba(47, 48, 58, 0.80);;
-color:#fff;
+  position: absolute;
+  bottom: 0;
 
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
 
-position:absolute;
-bottom: 0;
+  width: 100%;
+  height: 70px;
 
-left: 50%;
-transform: translate(-50%); 
-display: flex;
-
-width: 100%;
-height: 70px;
-
-justify-content: center;
-align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 /* преимущества */
 .advantages {
@@ -383,8 +372,8 @@ align-items: center;
 .sotial {
   display: flex;
   justify-content: center;
-  margin-top: 16px ;
-  gap:10px
+  margin-top: 16px;
+  gap: 10px;
 }
 
 .sotial-linc {
@@ -397,23 +386,23 @@ align-items: center;
   border-radius: 50%;
 }
 
-.sotial-comand{
- width: 40px;
+.sotial-comand {
+  width: 40px;
   height: 40px;
   border-radius: 50%;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
-
+  transition-duration: 250ms;
 }
 
 .sotial-list :hover,
 .sotial-list :focus {
   fill: #f5f4fa;
   background-color: #2196f3;
- 
+  transition-duration: 250ms;
 }
 
 .section-team {
@@ -460,12 +449,10 @@ align-items: center;
 .list-clients {
   display: flex;
   flex-wrap: wrap;
-  gap:30px
+  gap: 30px;
 }
 
-
-
-.for-linc{
+.for-linc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,18 +463,18 @@ align-items: center;
   width: 170px;
   height: 92px;
   fill: #afb1b8;
+  transition-duration: 250ms;
 }
 
 .for-linc:hover,
-.for-linc:focus{
-    border-color:#2196f3;
-    fill: #2196f3;
+.for-linc:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+  transition-duration: 250ms;
 }
 
-
-
 .clients-linc {
-   width: 106px; 
+  width: 106px;
   height: 60px;
 }
 
@@ -513,7 +500,7 @@ align-items: center;
 
   margin-bottom: 28px;
 }
-.main-footer{
+.main-footer {
   display: flex;
   align-items: baseline;
   font-style: normal;
@@ -521,11 +508,9 @@ align-items: center;
 
 .adress {
   font-style: normal;
- 
 }
 .adress-footer {
   display: block;
- 
 }
 .adress .adress-footer,
 .adress .tel-footer {
@@ -537,6 +522,7 @@ align-items: center;
   text-decoration: none;
   margin-bottom: 12px;
   margin-top: 12px;
+  transition-duration: 250ms;
 }
 .adress .adress-footer:hover,
 .adress .tel-footer:hover {
@@ -545,16 +531,16 @@ align-items: center;
 .adress .adress-footer:focus,
 .adress .tel-footer:focus {
   color: #ffffff;
+  transition-duration: 250ms;
 }
 
 .adress-thumb {
   width: 231px;
   margin: 0;
-   
 }
 .thumb-list {
   display: flex;
-  gap:10px
+  gap: 10px;
 }
 .sotial-futer {
   margin: 0 0 0 70px;
@@ -571,25 +557,24 @@ align-items: center;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.icon-footer{
- width: 40px;
+.icon-footer {
+  width: 40px;
   height: 40px;
   border-radius: 50%;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-
+  transition-duration: 250ms;
 }
-
-
 
 .welcome-list :hover,
 .welcome-list :focus {
   fill: #f5f4fa;
   background-color: #2196f3;
+  transition-duration: 250ms;
 }
 
 /* СТИЛИ ДЛЯ СТРАНИЦЫ ПОРТФОЛИО */
@@ -624,15 +609,17 @@ li {
   border: 0;
   display: inline-block;
   text-align: center;
+
+  transition-duration: 250ms;
 }
+
 .button:hover,
-.button:focus  {
+.button:focus {
   background-color: var(--button-background-hover);
   color: #ffffff;
   box-shadow: var(--shadow-for-box);
+  transition-duration: 250ms;
 }
-
-
 
 .portfolio {
   padding-top: 94px;
@@ -696,45 +683,34 @@ li {
   display: block;
 }
 
-
 .filtr-work:hover,
 .filtr-work:focus {
   box-shadow: var(--shadow-for-box);
- 
+  transition-duration: 250ms;
 }
 
-
-
-
-
-.test{
+.test {
   position: relative;
   overflow: hidden;
 }
 
-.photo-list:hover .photo-txt{
- transform: translatey(0);
+.photo-list:hover .photo-txt {
+  transform: translatey(0);
+  transition-duration: 250ms;
 }
 
+.photo-txt {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 63px 24px;
 
-
-.photo-txt{
-color: #ffffff;
-font-size: 18px;
-font-weight: 400;
-padding: 63px 24px;
-
-position: absolute;
-top: 0;
-left: 0;
-background-color: 
-rgba(33, 150, 243, 0.90);
-width: 100%;
-height: 100%;
-transform: translatey(100%);
-transition-duration: 250ms;
-
- 
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition-duration: 250ms;
 }
-
-
